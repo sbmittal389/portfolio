@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Hero with typing animation and terminal style -->
+  <header class="hero">
+    <div class="container terminal">
+      <pre><code><span class="prompt">$</span> <span class="typed-text" id="typed-text"></span><span class="cursor"></span></code></pre>
+    </div>
+  </header>
+
+  <!-- <section class="about section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Something about me</p>
+    </div>
+  </section> -->
+
+  <section class="experience section">
+    <div class="container">
+      <h2>Work Experience</h2>
+
+      <div class="job">
+        <h3>Data Engineer <span class="company">@ Metropolitan Transportation Authority (MTA)</span></h3>
+        <p class="meta">New York, NY • June 2024 – Present</p>
+      </div>
+      <div class="job">
+        <h3>Data Engineering Intern <span class="company">@ Metropolitan Transportation Authority</span></h3>
+        <p class="meta">New York, NY • May 2023 – May 2023</p>
+      </div>
+      <div class="job">
+        <h3>Data Engineering Intern <span class="company">@ Ericsson</span></h3>
+        <p class="meta">India • April 2021 – September 2021</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills section">
+    <div class="container">
+      <h2>Technical Skills</h2>
+
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Spark SQL</span>
+          <span class="skill-tag">Shell Scripting</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Technologies</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Azure Keyvault</span>
+          <span class="skill-tag">Azure Blob Storage</span>
+          <span class="skill-tag">Azure Datalake Storage</span>
+          <span class="skill-tag">Azure Active Directory(Entra ID)</span>
+          <span class="skill-tag">AWS S3</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Helm</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Gitlab</span>
+          <span class="skill-tag">Github</span>
+          <span class="skill-tag">CI/CD Pipelines</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Red Hat Openshift</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Data Engineering</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Apache Airflow</span>
+          <span class="skill-tag">Apache Spark</span>
+          <span class="skill-tag">Marquez</span>
+          <span class="skill-tag">Trino</span>
+          <span class="skill-tag">Hive</span>
+          <span class="skill-tag">Hadoop</span>
+          <span class="skill-tag">Apache Arrow</span>
+        </div>
+      </div>
+  </section>
+
+  <!-- <section class="projects section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>Short project description. What did you build, why, and what tools you used.</p>
+        </div>
+        <!-- Add more projects -->
+      </div>
+    </div>
+  </section> -->
+
+  <section class="contact section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Reach me at <a href="mailto:your@email.com">mittalshubham389@email.com</a></p>
+    </div>
+  </section>
+
+  <!-- <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Your Name. Built with HTML, CSS, and ❤️</p>
+    </div>
+  </footer> -->
+
+  <script>
+    const text = "Hello, I'm Shubham Mittal";
+    const speed = 100;
+    let i = 0;
+
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typed-text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 0;
+  border-top: 1px solid #eee;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero {
+  background-color: #1e1e1e;
+  color: #c9d1d9;
+  padding: 6rem 0;
+  font-family: 'Fira Code', monospace;
+}
+
+.terminal {
+  background-color: #0d1117;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+.prompt {
+  color: #00ff00;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #c9d1d9;
+  width: 8px;
+  height: 1em;
+  animation: blink 0.8s infinite;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* About Section
+.about p {
+  font-size: 1.1rem;
+} */
+
+/* Work Experience */
+.experience .job {
+  margin-bottom: 2rem;
+}
+
+.experience h3 {
+  font-size: 1.3rem;
+  color: #111;
+}
+
+.company {
+  color: #0077cc;
+  font-weight: normal;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.experience ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.experience li {
+  margin-bottom: 0.5rem;
+}
+
+/* Technical Skills */
+.skills .skill-group {
+  margin-bottom: 2rem;
+}
+
+.skills h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  color: #333;
+}
+
+/* Projects */
+/* .projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+} */
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #eee;
+  color: #666;
+}
